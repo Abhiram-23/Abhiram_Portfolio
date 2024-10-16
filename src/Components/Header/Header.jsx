@@ -21,20 +21,6 @@ const Header = () => {
         </ul>
       </nav>
       <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-
-      <div className="my-6 px-5">
-        <h1 className="flex flex-row justify-center text-3xl text-pink-300">
-          Hello , I'm Abhiram
-        </h1>
-        <h1 className="flex flex-row justify-center text-3xl text-pink-300">
-          Full Stack Developer 🔥 🚀
-        </h1>
-        <h1 className="flex flex-row justify-center text-3xl text-pink-300">
-          Full Stack Developer with experience in MERN, Python
-        </h1>
-      </div>
-      {/* need to add picture in this area */}
-      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
     </div>
   );
 };
