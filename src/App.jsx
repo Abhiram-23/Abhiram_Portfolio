@@ -1,4 +1,5 @@
 import Aboutme from "./Components/Aboutme/Aboutme";
+import Experience from "./Components/Experience/Experience";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Links from "./Components/Links/Links";
@@ -11,8 +12,7 @@ export default function App() {
       <Home />
       <Links />
       <Aboutme />
-      {/* need to fix skills section */}
-      {/* <Skills /> */}
+      <Experience />
     </div>
   );
 }
