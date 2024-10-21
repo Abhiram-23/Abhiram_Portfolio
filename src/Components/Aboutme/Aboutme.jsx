@@ -88,7 +88,7 @@ const Aboutme = () => {
           </div>
 
           <div className="md:w-1/2 mt-8 md:mt-0">
-            <div className="px-5 text-xl antialiased text-pink-100 font-semibold leading-relaxed space-y-4">
+            <div className="px-5 text-xl antialiased text-pink-100 font-semibold leading-relaxed space-y-4 text-justify">
               <p>
                 Welcome to my portfolio! I'm Abhiram Paidimarri, a passionate
                 and driven software engineer currently pursuing a Master of

@@ -3,21 +3,21 @@ import React from "react";
 const Experience = () => {
   return (
     <div className="font-display mx-3">
-      <h4 class="mb-8 text-3xl font-bold text-center md:text-left">
+      <h4 class="mb-8 text-4xl font-bold text-center md:text-left">
         Experience
       </h4>
       <div class="grid grid-cols-1 md:grid-cols-6 my-10">
         <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-          <h5 class="text-xl md:text-2xl font-bold">
+          <h5 class="text-xl md:text-3xl font-bold">
             University of Louisiana at Lafayette, USA
           </h5>
-          <h6 class="text-lg font-bold">
+          <h6 class="text-xl font-bold">
             Graduate Assistant at University Computing Support Service
           </h6>
-          <p>September 2023 – Present</p>
+          <p className="text-l">September 2023 – Present</p>
         </div>
         <div class="flex flex-col col-span-4">
-          <ul className="list-disc px-2">
+          <ul className="list-disc px-2 text-justify">
             <li>
               Worked on migrating services from virtual machines to Docker
               containers hosted on AWS ECS.
@@ -35,14 +35,14 @@ const Experience = () => {
       </div>
       <div class="grid grid-cols-1 md:grid-cols-6 my-10">
         <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-          <h5 class="text-xl md:text-2xl font-bold">
-            Valuebound Consulting Services Pvt. Ltd, India{" "}
+          <h5 class="text-xl md:text-3xl font-bold">
+            Valuebound Consulting Services Pvt. Ltd, India
           </h5>
-          <h6 class="text-lg font-bold">SDE1 </h6>
-          <p>September 2021 – July 2023</p>
+          <h6 class="text-xl font-bold">SDE1 </h6>
+          <p className="text-l">September 2021 – July 2023</p>
         </div>
         <div class="flex flex-col col-span-4">
-          <ul className="list-disc px-2">
+          <ul className="list-disc px-2 text-justify">
             <li>
               Implemented the PMO section of the company ERP, improving
               management's reporting and project tracking for over 200 employees
