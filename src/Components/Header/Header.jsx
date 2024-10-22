@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [hidden, sethidden] = useState("");
+
   const btnClicked = () => {
     if (hidden === "") {
       sethidden("hidden");
@@ -9,9 +11,11 @@ const Header = () => {
       sethidden("");
     }
   };
+
   const a = "w-full flex-grow lg:flex items-center lg:w-auto" + hidden;
+
   return (
-    <div className="py-4 px-2 lg:mx-4 xl:mx-12">
+    <div className="py-4 px-2 lg:mx-4 xl:mx-12 font-display">
       <div>
         <nav className="flex items-center justify-between flex-wrap">
           <div className="block lg:hidden">
@@ -34,42 +38,66 @@ const Header = () => {
           ) : (
             <div id="main-nav" className={a}>
               <div className="text-xl lg:flex-grow mt-2 animated jackinthebox xl:mx-8">
-                <a
-                  href="#home"
-                  className="block lg:inline-block text-md font-bold text-orange-300 sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className="block lg:inline-block cursor-pointer text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
                 >
-                  HOME
-                </a>
-                <a
-                  href="#home"
-                  className="block lg:inline-block text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
+                  Home
+                </Link>
+                <Link
+                  to="about"
+                  spy={true}
+                  offset={-150}
+                  smooth={true}
+                  duration={500}
+                  className="block lg:inline-block cursor-pointer text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
                 >
                   About
-                </a>
-                <a
-                  href="#home"
-                  className="block lg:inline-block text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
+                </Link>
+                <Link
+                  to="resume"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className="block lg:inline-block cursor-pointer text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
                 >
                   Resume
-                </a>
-                <a
-                  href="#home"
-                  className="block lg:inline-block text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
+                </Link>
+                <Link
+                  to="experience"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className="block lg:inline-block cursor-pointer text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
                 >
                   Experience
-                </a>
-                <a
-                  href="#home"
-                  className="block lg:inline-block text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
+                </Link>
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className="block lg:inline-block cursor-pointer text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
                 >
                   Projects
-                </a>
-                <a
-                  href="#home"
-                  className="block lg:inline-block text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
+                </Link>
+                <Link
+                  to="contact-me"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className="block lg:inline-block cursor-pointer text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
                 >
-                  Contact Me
-                </a>
+                  Contact-Me
+                </Link>
               </div>
             </div>
           )}

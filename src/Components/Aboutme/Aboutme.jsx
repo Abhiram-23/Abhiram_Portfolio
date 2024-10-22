@@ -51,7 +51,7 @@ const Aboutme = () => {
   }, []);
 
   const renderSvgSection = (title, svgs) => (
-    <div className="mb-8">
+    <div className="mb-8" id="about">
       <h2 className="text-3xl font-bold mb-4 text-center">{title}</h2>
       <div className="flex flex-wrap justify-center items-center gap-6">
         {svgs.map((svg, index) => (

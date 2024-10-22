@@ -2,13 +2,13 @@ import React from "react";
 
 const Links = () => {
   return (
-    <div className="mx-3 py-1.5 font-display ">
+    <div className="mx-3 py-1.5 font-display" id="links">
       <nav className=" flex justify-between text-2xl p-1.5 ">
         <ul>
           <a href="https://leetcode.com/u/abhiram_paidimarri/">
             <li className="cursor-pointer list-none">
               <svg
-                class=" my-2 w-16 h-16 fill-current"
+                className=" my-2 w-16 h-16 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 id="leetcode"
@@ -34,7 +34,7 @@ const Links = () => {
           <a href="https://github.com/Abhiram-23">
             <li className="cursor-pointer">
               <svg
-                class="w-16 h-16 my-2 fill-current"
+                className="w-16 h-16 my-2 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 id="github"
@@ -54,7 +54,7 @@ const Links = () => {
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-16 h-16 my-2 fill-current"
+                className="w-16 h-16 my-2 fill-current"
               >
                 <rect
                   x="2"
@@ -88,7 +88,7 @@ const Links = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 id="hackerrank"
-                class="w-16 h-16 fill-blue my-2"
+                className="w-16 h-16 fill-blue my-2"
               >
                 <path
                   fill="#2FC363"
