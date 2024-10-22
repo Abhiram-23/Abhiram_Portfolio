@@ -58,16 +58,13 @@ const Header = () => {
                 >
                   About
                 </Link>
-                <Link
-                  to="resume"
-                  spy={true}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
+                <a
                   className="block lg:inline-block cursor-pointer text-md font-bold sm:hover:border-indigo-400 hover:text-orange-300 mx-2 focus:text-blue-300 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
+                  href="Abhiram_Resume.pdf"
+                  download="Abhiram_Resume.pdf"
                 >
-                  Resume
-                </Link>
+                  <p className="btn highlighted-btn"> Get Resume</p>
+                </a>
                 <Link
                   to="experience"
                   spy={true}
