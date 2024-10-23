@@ -210,7 +210,7 @@ const Aboutme = () => {
 
   return (
     <div className="font-display  mx-3">
-      <div className="container mx-auto">
+      <div className="container px-0 mx-auto">
         <div className="flex flex-col md:flex-row md:space-x-12 items-start">
           <div className="md:w-1/2">
             <div className="my-5 text-5xl text-center italic font-black">
@@ -223,7 +223,7 @@ const Aboutme = () => {
           </div>
 
           <div className="md:w-1/2 mt-8 md:mt-0">
-            <div className="px-5 text-xl antialiased text-pink-100 font-semibold leading-relaxed space-y-4 text-justify">
+            <div className="text-xl antialiased text-pink-100 font-semibold leading-relaxed space-y-4 text-justify">
               <p>
                 Welcome to my portfolio! I'm Abhiram Paidimarri, a passionate
                 and driven software engineer currently pursuing a Master of

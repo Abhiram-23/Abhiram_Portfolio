@@ -28,14 +28,13 @@ const Home = () => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mt-4">
             🔥 🚀 {text} <Cursor cursorStyle="|" />
             🚀🔥
-            <span></span>
           </h1>
         </div>
         <div className="relative justify-center items-center content-center justify-self-center justify-items-center self-center place-items-center">
           <img
             src={Abhiram}
             alt="Abhiram Paidimarri"
-            className=" h-96 lg:h-96 md:h-64 sm:h-48 w-auto rounded-sm object-cover transform scale-105 items-center content-center justify-self-center self-center justify-items-center place-items-center"
+            className="h-96 lg:h-96 md:h-64 sm:h-48 w-auto rounded-sm object-cover transform scale-105 items-center content-center justify-self-center self-center justify-items-center place-items-center"
           />
         </div>
       </div>

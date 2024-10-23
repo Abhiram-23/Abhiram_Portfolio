@@ -3,9 +3,9 @@ import React from "react";
 const Projects = () => {
   return (
     <section className=" mx-5 font-display" id="projects">
-      <div className="container my-3">
+      <div className="container px-0 my-3">
         <div className="flex flex-wrap xl:mx-4 mx-0 sm:mx-1 justify-evenly">
-          <div className="sm:w-full  md:w-1/2 xl:w-1/3 px-4 py-2">
+          <div className="w-full  md:w-1/2 xl:w-1/3 md:px-4 py-2">
             <div className="bg-white h-full flex flex-col rounded-lg mb-10 max-h-3/5 lg:max-h-3/5 overflow-hidden">
               <img
                 src="https://blog.apify.com/content/images/2023/09/what-is-web-scraping-websites-web-scraper-structured-data-1.png"
@@ -69,7 +69,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-full  md:w-1/2 xl:w-1/3 px-4 py-2">
+          <div className="w-full  md:w-1/2 xl:w-1/3 md:px-4 py-2">
             <div className="bg-white h-full flex flex-col rounded-lg mb-10 max-h-3/5 lg:max-h-3/5 overflow-hidden">
               <img
                 src="https://www.zdnet.com/a/img/resize/02ce32fd41dbf78e0ad4ea0070d02cd5b30d42c1/2024/02/07/5374e91a-e8ae-4337-84ac-b9eb9c977453/screenshot-2024-02-07-at-5-08-13pm.png?auto=webp&width=1280"
@@ -137,7 +137,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 xl:w-1/3 px-4 py-2">
+          <div className="w-full md:w-1/2 xl:w-1/3 md:px-4 py-2">
             <div className="bg-white h-full flex flex-col rounded-lg mb-10 max-h-3/5 lg:max-h-3/5 overflow-hidden">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTNqxT6YhSr_VfKD_p8R-126I6WDe4CkjngA&s"
@@ -206,7 +206,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 xl:w-1/3 px-4 py-2">
+          <div className="w-full md:w-1/2 xl:w-1/3 md:px-4 py-2">
             <div className="bg-white h-full flex flex-col rounded-lg mb-10 max-h-3/5 lg:max-h-3/5 overflow-hidden">
               <img
                 src="https://www.labellerr.com/blog/content/images/size/w2000/2023/11/Driver-drowsiness-main.webp"

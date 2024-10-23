@@ -28,7 +28,7 @@ const ScrollToTop = () => {
       {showScrollButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 p-3 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600"
+          className="fixed bottom-5 animate-bounce  right-5 p-3 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600"
         >
           ↑
         </button>
