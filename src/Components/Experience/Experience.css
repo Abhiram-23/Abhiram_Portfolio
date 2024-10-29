@@ -1,0 +1,54 @@
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background: #2a2a2a; /* Background color for cards */
+  color: #fff; /* Text color */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.timeline-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.timeline-content {
+  padding: 20px; /* Add padding inside cards */
+}
+
+/* Add glow effect */
+.timeline-content h5,
+.timeline-content h6 {
+  margin-bottom: 5px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect */
+}
+
+/* Alternate left and right positioning */
+.timeline-item.left {
+  margin-left: 0;
+  margin-right: auto;
+  border-left: 4px solid #4a90e2; /* Left border for left items */
+}
+
+.timeline-item.right {
+  margin-left: auto;
+  margin-right: 0;
+  border-right: 4px solid #4a90e2; /* Right border for right items */
+}
+
+/* Ensure the left and right items are aligned correctly */
+.timeline-item.left .timeline-content {
+  text-align: left;
+}
+
+.timeline-item.right .timeline-content {
+  text-align: right;
+}
