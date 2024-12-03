@@ -55,7 +55,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section className="py-16" id="projects">
+    <section className="py-16 font-display mx-3" id="projects">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
         <div className="flex justify-center flex-wrap">
