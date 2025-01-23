@@ -1,54 +1,75 @@
-.timeline {
-  position: relative;
-  max-width: 800px;
+/* General Experience Section */
+.experience-container {
+  max-width: 900px;
   margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* Timeline Structure */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Individual Experience Cards */
 .timeline-item {
-  position: relative;
-  margin: 20px 0;
-  padding: 20px;
+  background: #222;
+  padding: 1.5rem;
   border-radius: 10px;
-  background: #2a2a2a; /* Background color for cards */
-  color: #fff; /* Text color */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
-  transition: transform 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .timeline-item:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+  transform: translateY(-5px);
 }
 
-.timeline-content {
-  padding: 20px; /* Add padding inside cards */
+/* Text Styling */
+.company-name {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fff;
 }
 
-/* Add glow effect */
-.timeline-content h5,
-.timeline-content h6 {
-  margin-bottom: 5px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect */
+.role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #bbbbbb;
+  margin: 0.5rem 0;
 }
 
-/* Alternate left and right positioning */
-.timeline-item.left {
-  margin-left: 0;
-  margin-right: auto;
-  border-left: 4px solid #4a90e2; /* Left border for left items */
+.duration {
+  font-size: 1rem;
+  color: #aaaaaa;
+  margin-bottom: 1rem;
 }
 
-.timeline-item.right {
-  margin-left: auto;
-  margin-right: 0;
-  border-right: 4px solid #4a90e2; /* Right border for right items */
+/* Responsibilities List */
+.responsibilities {
+  list-style: none;
+  padding-left: 0;
+  color: #ddd;
 }
 
-/* Ensure the left and right items are aligned correctly */
-.timeline-item.left .timeline-content {
-  text-align: left;
+.responsibilities li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 20px;
 }
 
-.timeline-item.right .timeline-content {
-  text-align: right;
+.responsibilities li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4a90e2;
+  font-size: 1.2rem;
 }

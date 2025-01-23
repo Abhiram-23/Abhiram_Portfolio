@@ -1,66 +1,53 @@
 import React from "react";
-import "./Experience.css"; // Make sure to create this CSS file
+import "./Experience.css";
+import SpotlightCard from "./SpotlightCard";
+
+const experiences = [
+  {
+    company: "University of Louisiana at Lafayette, USA",
+    role: "Graduate Assistant – University Computing Support Service",
+    duration: "September 2023 – Present",
+    responsibilities: [
+      "Migrated services from virtual machines to Docker containers on AWS ECS.",
+      "Integrated AWS Elastic File System (EFS) for scalable file storage.",
+      "Implemented file syncing from EFS to AWS S3 with lifecycle policies for archiving.",
+    ],
+  },
+  {
+    company: "Valuebound Consulting Services Pvt. Ltd, India",
+    role: "Software Development Engineer (SDE1)",
+    duration: "September 2021 – July 2023",
+    responsibilities: [
+      "Developed the PMO module for ERP, improving reporting for 200+ employees.",
+      "Integrated Dialpad, Twilio, and SalesLoft with MindTickle AI for analytics.",
+      "Automated call data processing using OAuth 2.0, webhooks, and AWS S3.",
+    ],
+  },
+];
 
 const Experience = () => {
   return (
-    <div id="experience" className="font-display mx-3">
-      <h4 className="mb-8 text-4xl font-bold text-center md:text-left">
-        Experience
-      </h4>
+    <div id="experience" className="experience-container">
+      <h4 className="section-title">Experience</h4>
+
       <div className="timeline">
-        <div className="timeline-item left">
-          <div className="timeline-content">
-            <h5 className="text-xl md:text-3xl font-bold">
-              University of Louisiana at Lafayette, USA
-            </h5>
-            <h6 className="text-xl font-bold">
-              Graduate Assistant at University Computing Support Service
-            </h6>
-            <p className="text-l">September 2023 – Present</p>
-            <ul className="list-disc px-2 text-justify">
-              <li>
-                Worked on migrating services from virtual machines to Docker
-                containers hosted on AWS ECS.
-              </li>
-              <li>
-                Integrated AWS Elastic File System (EFS) for file storage,
-                ensuring seamless scalability.
-              </li>
-              <li>
-                Implemented file syncing from EFS to AWS S3 and added lifecycle
-                policies to move files to S3 Glacier for long-term storage.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="timeline-item right">
-          <div className="timeline-content">
-            <h5 className="text-xl md:text-3xl font-bold">
-              Valuebound Consulting Services Pvt. Ltd, India
-            </h5>
-            <h6 className="text-xl font-bold">SDE1</h6>
-            <p className="text-l">September 2021 – July 2023</p>
-            <ul className="list-disc px-2 text-justify">
-              <li>
-                Implemented the PMO section of the company ERP, improving
-                management's reporting and project tracking for over 200
-                employees using React, NodeJS, ExpressJS, Material UI, and
-                MongoDB.
-              </li>
-              <li>
-                Led Dialer’s Integration with the MindTickle Platform. Utilized
-                OAuth 2.0, webhooks, and cron jobs to process call data,
-                managing thousands of recordings in AWS S3 and enabling
-                efficient analytics with SQL databases using Python, AWS, and
-                PostgreSQL.
-              </li>
-            </ul>
-          </div>
-        </div>
+        {experiences.map((exp, index) => (
+          <SpotlightCard key={index} className="custom-spotlight-card">
+            <div className="timeline-item">
+              <div className="timeline-content">
+                <h5 className="company-name">{exp.company}</h5>
+                <h6 className="role">{exp.role}</h6>
+                <p className="duration">{exp.duration}</p>
+                <ul className="responsibilities">
+                  {exp.responsibilities.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </SpotlightCard>
+        ))}
       </div>
-
-      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
     </div>
   );
 };

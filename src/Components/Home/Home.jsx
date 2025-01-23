@@ -2,7 +2,7 @@ import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 import Abhiram from "../../assets/Images/Abhiram.png";
-
+import SplitText from "./SplitText";
 const Home = () => {
   const [text] = useTypewriter({
     words: [
@@ -22,12 +22,18 @@ const Home = () => {
     <div className="mx-3" id="home">
       <div className="relative font-display flex flex-col justify-center items-center text-center text-white ">
         <div className="mb-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mt-2">
-            Hello, I'm Abhiram
-          </h1>
+          <SplitText
+            text="Hello, I'm Abhiram"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold mt-2"
+            delay={150}
+            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+            easing="easeOutCubic"
+            threshold={0.2}
+            rootMargin="-50px"
+          />
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mt-4">
-            🔥 🚀 {text} <Cursor cursorStyle="|" />
-            🚀🔥
+            {text} <Cursor cursorStyle="|" />
           </h1>
         </div>
         <div className="relative justify-center items-center content-center justify-self-center justify-items-center self-center place-items-center">
